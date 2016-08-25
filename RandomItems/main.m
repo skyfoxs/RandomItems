@@ -12,7 +12,9 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         Item *item = [[Item alloc] initWithName: @"Test Item"];
+        NSLog(@"%@", item);
 
+        item = [Item random];
         NSLog(@"%@", item);
     }
     return 0;

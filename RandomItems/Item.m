@@ -29,4 +29,11 @@
     return [NSString stringWithFormat:@"%@ has value %d", self.itemName, self.value];
 }
 
++ (Item *)random {
+    NSArray *name = @[@"Pop", @"Tavee", @"Koh", @"Kae"];
+    NSString *randomName = name[arc4random() % 4];
+
+    return [[Item alloc] initWithName:randomName value:0];
+}
+
 @end

@@ -16,4 +16,6 @@
 - (instancetype)initWithName:(NSString *)name value:(int) value;
 - (instancetype)initWithName:(NSString *)name;
 
++ (Item *)random;
+
 @end

@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Item.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Item *item = [[Item alloc] initWithName: @"Test Item"];
+
+        NSLog(@"%@", item);
     }
     return 0;
 }

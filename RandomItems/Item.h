@@ -9,20 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface Item : NSObject
-{
-    NSString *_itemName;
-    int _value;
-}
+
+@property (nonatomic, copy) NSString *itemName;
+@property (nonatomic) int value;
 
 - (instancetype)initWithName:(NSString *)name value:(int) value;
 - (instancetype)initWithName:(NSString *)name;
-
-
-// When not use @property for instance variable we need accessor to access instance variables
-- (void)setItemName: (NSString *)itemName;
-- (NSString *)itemName;
-
-- (void)setValue: (int)value;
-- (int)value;
 
 @end

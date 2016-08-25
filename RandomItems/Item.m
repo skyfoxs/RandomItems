@@ -29,17 +29,4 @@
     return [NSString stringWithFormat:@"%@ has value %d", self.itemName, self.value];
 }
 
-- (void)setItemName:(NSString *)itemName {
-    _itemName = itemName;
-}
-- (NSString *)itemName {
-    return _itemName;
-}
-- (void)setValue:(int) value {
-    _value = value;
-}
-- (int)value {
-    return _value;
-}
-
 @end
